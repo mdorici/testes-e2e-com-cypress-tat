@@ -1,0 +1,27 @@
+{
+  "name": "testes-e2e-com-cypress",
+  "version": "1.0.0",
+  "description": "TBD.",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:open:tablet": "cypress open --config viewportWidth=767,viewportHeight=480",
+    "test": "cypress run",
+    "test:tablet": "cypress run --config viewportWidth=767,viewportHeight=480 --spec cypress/integration/authenticatedScenarios.spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "cypress": "^12.9.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-mailosaur": "^2.13.0",
+    "eslint": "^8.37.0",
+    "eslint-plugin-cypress": "^2.13.2",
+    "faker": "^5.5.3"
+  },
+  "dependencies": {
+    "cypress-iframe": "^1.0.1"
+  }
+}
