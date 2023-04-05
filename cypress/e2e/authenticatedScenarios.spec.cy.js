@@ -29,15 +29,15 @@ describe('Scenarios where authentication is a pre-requirement', () => {
 
     cy.fillSettingsFormAndSubmit()
 
-    
+     // eslint-disable-next-line cypress/no-unnecessary-waiting
+     cy.wait(5000)
     cy.wait('@getNotes')
     cy.wait('@paymentRequest').then(response => {
       expect(response.state).to.equal('Complete')
     })
   })
 
-
-  it('logs out', () => {
+  it('logs out', { tags: '@desktop-and-tablet' }, () => {
     cy.visit('/')
     cy.wait('@getNotes')
 
