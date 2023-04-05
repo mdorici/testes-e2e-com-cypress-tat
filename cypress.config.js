@@ -9,7 +9,8 @@ module.exports = defineConfig({
     viewportWidthBreakpoint: 768
   },
    chromeWebSecurity: false,
-   experimentalStudio: true
+   experimentalStudio: true,
+   projectId: "sdrbum"
   }
 })
 
